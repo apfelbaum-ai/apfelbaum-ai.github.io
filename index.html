@@ -21,6 +21,8 @@
             width: 100%;
             margin: 0 auto;
             position: relative;
+            padding: 0 20px;
+            box-sizing: border-box;
         }
 
         .logo {
@@ -120,6 +122,45 @@
         .preorder-button:hover {
             background-color: #000;
             color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .logo {
+                position: static;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+
+            .main-content {
+                padding-top: 20px;
+            }
+
+            .hero-text {
+                font-size: 36px;
+            }
+
+            .sub-text {
+                font-size: 20px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-image img {
+                width: 100%;
+                height: auto;
+                max-width: 400px;
+            }
+
+            .product-details {
+                text-align: center;
+            }
         }
     </style>
 </head>
