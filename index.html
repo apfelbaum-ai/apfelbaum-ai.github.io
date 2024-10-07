@@ -1,35 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apfelbaum AI</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@300&family=STIX+Two+Math:wght@400;500;600&display=swap');
+    <head>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="img/site.webmanifest" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Apfelbaum AI</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Avenir+Next:wght@300&family=STIX+Two+Math:wght@400;500;600&display=swap");
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Avenir Next', sans-serif;
-            background-color: #fff;
-            color: #000;
-            min-height: 100vh;
-        }
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Avenir Next", sans-serif;
+                background-color: #fff;
+                color: #000;
+                min-height: 100vh;
+            }
 
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            margin: 0 auto;
-            position: relative;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
+            .container {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                padding: 0 20px;
+                box-sizing: border-box;
+            }
 
-        /* .logo {
+            /* .logo {
             font-family: 'STIX Two Math', serif;
             font-size: 20px;
             text-align: left;
@@ -38,138 +52,22 @@
             align-items: center;
             position: absolute;
             top: 0;
-            left: -88px; 
-        } */
-
-        .logo {
-            font-family: 'Times New Roman', serif;
-            font-size: 20px;
-            font-weight: bold;
-            font-style: italic;
-            letter-spacing: -1.22px; /* This adjusts the spacing between characters */
-            text-align: left;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            top: 0;
             left: -88px;
-        }
-
-        .logo-img {
-            width: 25px;
-            height: 25px;
-            margin-right: 5px;
-            padding-bottom: 5px;
-        }
-
-        .logo-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-
-        /* .logo-text {
-            font-weight: 500;
         } */
-
-        .main-content {
-            padding-top: 133px; /* Adjust based on logo height */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .hero-text {
-            font-family: 'Times New Roman', serif;
-            font-size: 48px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        .sub-text {
-            font-family: 'Avenir Next', sans-serif;
-            font-size: 24px;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .images {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .product-image img {
-            width: 400px;
-            height: 300px;
-        }
-
-        .product-image2 img {
-            width: 150px;
-            height: 90px;
-        }
-
-        .product-details {
-            font-family: 'Avenir Next', sans-serif;
-            font-size: 13px;
-            line-height: 1.6;
-            max-width: 400px;
-            font-weight: 150;
-        }
-
-        .price {
-            font-size: 13px;
-            margin-top: 20px;
-            font-weight: 450;
-        }
-
-        .preorder-button {
-            font-family: 'Avenir Next', sans-serif;
-            font-size: 13px;
-            font-weight: 400;
-            padding: 6px 20px;
-            background-color: #fff;
-            border: 1px solid #000;
-            border-radius: 20px; /* Use pixels for rounded corners */
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-align: center;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .preorder-button:hover {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .smol {
-            font-family: 'Avenir Next', sans-serif;
-            font-size: 9px;
-            line-height: 1.6;
-            font-weight: 150;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 10px;
-            }
 
             .logo {
-                position: static;
-                justify-content: center;
-                margin-bottom: 20px;
-                font-size: 30px;
+                font-family: "Times New Roman", serif;
+                font-size: 22px;
+                font-weight: bold;
+                font-style: italic;
+                letter-spacing: -1px;
+                text-align: left;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                left: -88px;
             }
 
             .logo-img {
@@ -179,102 +77,230 @@
                 padding-bottom: 5px;
             }
 
+            .logo-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            /* .logo-text {
+            font-weight: 500;
+        } */
+
             .main-content {
-                padding-top: 20px;
-            }
-
-            .hero-text {
-                font-size: 36px;
-            }
-
-            .line-one {
-                display: block; /* Forces line-one to be on its own line */
-            }
-            .line-two {
-                display: block; /* Forces line-two to be on its own line */
-            }
-
-            .sub-text {
-                font-size: 20px;
-            }
-
-            .content {
+                padding-top: 133px; /* Adjust based on logo height */
+                display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
-            .images {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            .hero-text {
+                font-family: "Times New Roman", serif;
+                font-size: 48px;
+                margin-bottom: 10px;
+                text-align: center;
             }
 
+            .sub-text {
+                font-family: "Avenir Next", sans-serif;
+                font-size: 24px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+
+            .images {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
             .product-image img {
-                width: 100%;
-                height: auto;
-                max-width: 400px;
+                width: 400px;
+                height: 300px;
+            }
+
+            .product-image2 img {
+                width: 150px;
+                height: 90px;
             }
 
             .product-details {
-                text-align: left;
+                font-family: "Avenir Next", sans-serif;
+                font-size: 13px;
+                line-height: 1.6;
+                max-width: 400px;
+                font-weight: 150;
+            }
+
+            .price {
+                font-size: 13px;
+                margin-top: 20px;
+                font-weight: 450;
+            }
+
+            .preorder-button {
+                font-family: "Avenir Next", sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                padding: 6px 20px;
+                background-color: #fff;
+                border: 1px solid #000;
+                border-radius: 20px; /* Use pixels for rounded corners */
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                text-align: center;
+                display: inline-block;
+                margin-top: 20px;
+            }
+
+            .preorder-button:hover {
+                background-color: #000;
+                color: #fff;
             }
 
             .smol {
-            font-family: 'Avenir Next', sans-serif;
-            font-size: 9px;
-            line-height: 1.6;
-            font-weight: 150;
-            max-width: 300px;
+                font-family: "Avenir Next", sans-serif;
+                font-size: 9px;
+                line-height: 1.6;
+                font-weight: 150;
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="logo">
-            <div class="logo-img">
-              <img src="img/logo_3d.png" alt="Apfelbaum Logo">
-            </div> 
-            <span class="logo-text">APFELBAUM</span>
-        </div>
-        <div class="main-content">
-            <div class="hero-text">
-                <span class="line-one">No-vidia.</span>
-                <span class="line-two">Just Apple Silicon.</span>
+
+            @media (max-width: 768px) {
+                .container {
+                    padding: 0 10px;
+                }
+
+                .logo {
+                    position: static;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                }
+
+                .logo-img {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                    padding-bottom: 5px;
+                }
+
+                .main-content {
+                    padding-top: 20px;
+                }
+
+                .hero-text {
+                    font-size: 36px;
+                }
+
+                .line-one {
+                    display: block; /* Forces line-one to be on its own line */
+                }
+                .line-two {
+                    display: block; /* Forces line-two to be on its own line */
+                }
+
+                .sub-text {
+                    font-size: 20px;
+                }
+
+                .content {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .images {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .product-image img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 400px;
+                }
+
+                .product-details {
+                    text-align: left;
+                }
+
+                .smol {
+                    font-family: "Avenir Next", sans-serif;
+                    font-size: 9px;
+                    line-height: 1.6;
+                    font-weight: 150;
+                    max-width: 300px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="img/logo_3d2.png" alt="Apfelbaum Logo" />
+                </div>
+                <span class="logo-text">APFELBAUM</span>
             </div>
-            <div class="sub-text">Bioengineering Design Workstation</div>
-            <div class="content">
-                <div class="images">
-                    <div class="product-image2">
-                        <img src="img/vision.jpeg" alt="Vision">
+            <div class="main-content">
+                <div class="hero-text">
+                    <span class="line-one">No-vidia.</span>
+                    <span class="line-two">Just Apple Silicon.</span>
+                </div>
+                <div class="sub-text">Bioengineering Design Workstation</div>
+                <div class="content">
+                    <div class="images">
+                        <div class="product-image2">
+                            <img src="img/vision.jpeg" alt="Vision" />
+                        </div>
+                        <div class="product-image">
+                            <img
+                                src="img/parmigiano.jpeg"
+                                alt="Apfelbaum Workstation"
+                            />
+                        </div>
                     </div>
-                    <div class="product-image">
-                        <img src="img/parmigiano.jpeg" alt="Apfelbaum Workstation">
+                    <div class="product-details">
+                        <p>
+                            AI Workstation for in silico chemistry, biology,<br />
+                            CRISPR
+                        </p>
+                        <ul>
+                            <li>No cloud</li>
+                            <li>Distributed inference partitioning models</li>
+                            <li>Load on multiple Apple Silicon devices</li>
+                            <li>Weights pre-installed</li>
+                            <li>Privacy-focused, secure data processing</li>
+                            <li>Horizontal scaling</li>
+                            <li>100% On-premise solution</li>
+                            <li>Energy-efficient</li>
+                            <li>Ships with a Mac Pro & Vision Pro</li>
+                        </ul>
+                        <div class="price">€49.999</div>
+                        <div class="price">Preorder for €999*</div>
+                        <a
+                            href="mailto:order@apfelbaumai.com?subject=Pre-order&body=Hi, I would like to get in touch for the pre-order process of the Apfelbaum system."
+                            class="preorder-button"
+                            >PREORDER</a
+                        >
                     </div>
                 </div>
-                <div class="product-details">
-                    <p>AI Workstation for in silico chemistry, biology,<br> CRISPR</p>
-                    <ul>
-                        <li>No cloud</li>
-                        <li>Distributed inference partitioning models</li>
-                        <li>Load on multiple Apple Silicon devices</li>
-                        <li>Weights pre-installed</li>
-                        <li>Privacy-focused, secure data processing</li>
-                        <li>Horizontal scaling</li>
-                        <li>100% On-premise solution</li>
-                        <li>Energy-efficient</li>
-                        <li>Ships with a Mac Pro & Vision Pro</li>
-                    </ul>
-                    <div class="price">€49.999</div>
-                    <div class="price">Preorder for €999*</div>
-                    <a href="mailto:support@apfelbaumai.com?subject=Pre-order&body=Hi, I would like to get in touch for the pre-order process of the Apfelbaum system."
-                       class="preorder-button">PREORDER</a>
+                <div class="smol">
+                    *Deposit €999 to secure your preorder and pay the full
+                    amount when we ship your Apfelbaum. <br />Supply solely to
+                    customers with a registered company. VAT and export/import
+                    taxes may apply.
                 </div>
             </div>
-            <div class="smol">*Deposit €999 to secure your preorder and pay the full amount when we ship your Apfelbaum.
-                <br>Supply solely to customers with a registered company. VAT and export/import taxes may apply.
-            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
